@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2993fd, #6bdb15); 
+}
+
+.cart {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 20px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.cart .item-details {
+    flex: 1;
+}
+
+.cart .item-details .name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart .item-details .price {
+    color: #666;
+}
+
+.cart .item-actions {
+    display: flex;
+    align-items: center;
+}
+
+.cart .item-actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cart .item-actions .increase {
+    background-color: blue;
+    color: white;
+}
+
+.cart .item-actions .decrease {
+    background-color: red;
+    color: white;
+}
+
+.cart .item-actions .remove {
+    background-color: #ddd;
+    color: #333;
+}
+
+.cart .item-actions .heart {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.cart .item-actions .heart.liked {
+    color: red;
+    font-weight: bold;
+}
+
+.cart .item-actions .heart.liked::before {
+    content: "♥";
+}
+
+.cart .item-actions .heart::before {
+    content: "♡";
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+span{
+    color: rgb(255, 255, 255);
+}
